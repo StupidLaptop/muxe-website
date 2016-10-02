@@ -1,0 +1,189 @@
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('bebasneue-webfont.woff2') format('woff2'),
+         url('bebasneue-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat-Regular'), url(http://fonts.gstatic.com/s/montserrat/v7/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat-Bold'), url(http://fonts.gstatic.com/s/montserrat/v7/IQHow_FEYlDC4Gzy_m8fcoWiMMZ7xLd792ULpGE4W_Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body {
+  color: #fff;
+  padding-top: 190px;
+  text-align: center;
+  font-family: 'bebas_neueregular', sans-serif;
+  font-size: 20px;
+  background-image: url(/images/intergal.jpg);
+}
+
+th{
+	color: #908AF6;	
+}
+
+p, td {
+	font-family: 'Montserrat', sans-serif;	
+	font-size: 16px;
+}
+
+a , a:link, a:visited{
+	color: #FE11F5;
+	/*color: #FE11F#FE11F5;*/
+	text-decoration: none;	
+}
+
+a:active {
+	text-decoration: none;
+	color: #908AF6;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #908AF6;
+}
+h1{
+	margin-bottom: 50px;
+	font-size: 60px;
+}
+
+nav li {
+	font-size: 30px;
+}
+
+li.active {
+	background-color: rgba(0,0,0,.6);	
+}
+
+li.active a {
+	color: #908AF6;
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+    }
+}
+
+/** HEADER **/
+#header-nav {
+  height: 146px;
+  width: 69.4%;
+  margin: auto; 
+  padding: 50px 30px 0;
+  background: #000;
+  padding: 15px 0 15px 0;
+  border-radius: 0;
+  border: 0;
+}
+
+#main-nav{
+	background: url(/images/P7.jpg);
+	/*color: #C02BDE;*/
+}
+
+#main-nav ul{
+	margin-bottom: 0px;
+}
+
+#main-nav li{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#social-nav{
+	position: fixed;
+	right: 50px;
+	top: 22px;
+
+}
+
+
+#logo-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  background: url('../images/muxe_rb_xs.jpg') no-repeat;
+  width: 120px;
+  height: 54px;
+}
+
+#logo-img-footer {
+  margin-left: auto;
+  margin-right: auto;
+  background: url('../images/muxe-black-cropped-xxs.png') no-repeat;
+  width: 80px;
+  height: 36px;
+}
+
+.svg path {
+	fill: #1ACFFE;
+}
+
+.svg {
+	width:36px;
+}
+
+svg:hover path{
+	fill: #908AF6;
+}
+
+/**CONTAINER**/
+
+.container {
+	height: 100%;
+	background: rgba(0, 0, 0, .65);
+	padding-left:30px;
+	padding-right:30px;	
+}
+
+.container h1{
+	color: #908AF6;
+	/*color: #D90E26;*/
+}
+#main-image {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+}
+
+/** SECTIONS **/
+.sections{}
+#section1{
+	margin-top: 68px;
+}
+#section4{
+	margin-top: 68px;
+}
+
+#section5{
+	margin-top: -136px;
+}
+
+#conciertos th {
+	text-align: left;
+}
+
+#conciertos td {
+	text-align: left;
+}
+
+/**CONTROLS**/
+/*.selected-index a{
+	background: #908AF6;
+}*/
+
