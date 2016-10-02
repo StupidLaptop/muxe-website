@@ -30,7 +30,7 @@ body {
   text-align: center;
   font-family: 'bebas_neueregular', sans-serif;
   font-size: 20px;
-  background-image: url(/images/intergal.jpg);
+  background-image: url(../images/intergal.jpg);
 }
 
 th{
@@ -94,7 +94,7 @@ li.active a {
 }
 
 #main-nav{
-	background: url(/images/P7.jpg);
+	background: url(../images/P7.jpg);
 	/*color: #C02BDE;*/
 }
 
