@@ -30,22 +30,22 @@
 
     });
 
-    $(document).ready(function() {
+$(document).ready(function() {
     $('#fullpage').fullpage({
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['firstPage', 'secondPage','thirdPage', 'fourthPage', 'fifthPage'],
+        anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['Home', 'Música', 'Video', 'Experimentos', 'Conciertos'],
+        navigationTooltips: ['MUXE', 'Música', 'Videos', 'Experimentos', 'Conciertos'],
         showActiveTooltip: false,
         slidesNavigation: true,
-        slidesNavPosition: 'bottom',
+        slidesNavPosition: 'top',
 
         //Scrolling
         css3: true,
-        scrollingSpeed: 1200,
+        scrollingSpeed: 700,
         autoScrolling: true,
         fitToSection: true,
         fitToSectionDelay: 1000,
@@ -57,7 +57,7 @@
         loopHorizontal: true,
         continuousVertical: false,
         continuousHorizontal: false,
-        scrollHorizontally: true,
+        scrollHorizontally: false,
         interlockedSlides: false,
         resetSliders: false,
         fadingEffect: false,
@@ -76,10 +76,10 @@
         //Design
         controlArrows: true,
         verticalCentered: true,
-        //sectionsColor: ['#000', '#000', '#000', '#000', '#000'],
-        paddingTop: '5em',
-        paddingBottom: '10px',
-        fixedElements: '#header, .footer',
+        //sectionsColor : ['#ccc', '#fff'],
+        paddingTop: '3em',
+        paddingBottom: '0px',
+        fixedElements: '#header-nav',
         responsiveWidth: 0,
         responsiveHeight: 0,
         responsiveSlides: false,
@@ -89,18 +89,16 @@
         slideSelector: '.slide',
 
         //events
-        onLeave: function(index, nextIndex, direction){
-        },
-        afterLoad: function(anchorLink, index){
-
-        },
+        onLeave: function(index, nextIndex, direction){},
+        afterLoad: function(anchorLink, index){},
         afterRender: function(){},
         afterResize: function(){},
+        afterResponsive: function(isResponsive){},
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
 });
 
-window.addEventListener("hashchange", function() { 
-    scrollBy(0, -175) })
+// window.addEventListener("hashchange", function() { 
+//     scrollBy(0, -175) })
 

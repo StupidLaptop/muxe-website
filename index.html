@@ -4,17 +4,16 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Bitter:400italic|Montserrat:400,400italic,700normal,700italic"/>
 
 	<title>MUXE</title>
 </head>
 <body>
-	<div class="container">
-		<nav id="header-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<nav id="header-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div id="logo-container" class="row center-block">				
 				<a href="index.html">
 					<div id="logo-img" alt="Logo image"></div>
@@ -23,11 +22,11 @@
 			<div id="main-nav" class="hidden-xs">
 				<div class="row">
 					<ul id="menu" class="list-inline">
-						<li data-menuanchor="firstPage" ><a href="#firstPage">Home</a></li>
+						<li data-menuanchor="firstPage" ><a href="#firstPage">MUXE</a></li>
 						<li data-menuanchor="secondPage" ><a href="#secondPage">Música</a></li>
 						<li data-menuanchor="thirdPage"><a href="#thirdPage">Videos</a></li>
-						<li data-menuanchor="fourthPage"><a href="#fourthPage">Experimentos</a></li>
-						<li data-menuanchor="fifthPage"><a href="#fifthPage">Conciertos</a></li>
+						<li data-menuanchor="fourthPage"><a href="#fourthPage">Conciertos</a></li>
+						<li data-menuanchor="fifthPage"><a href="#fifthPage">Experimentos</a></li>
 					</ul>
 				</div>
 			</div>
@@ -41,138 +40,70 @@
 				</ul>
 			</div>
 		</nav>
-		<div id="fullpage">
-		<div id="section2" class="section" data-anchor="firstPage">
-			<div class="row">
-				<div class="slide">
-					<img src="images/glitch1.png" class="hidden-xs hidden-sm">
-				</div>
-				<div class="slide">
-					<div id="main-image" class="col-md-12col-sm-12 col-xs-12 contenido">
-					 <!--
-						<img src="images/suenosealejamd.jpg" class="hidden-xs hidden-sm">
-						<img src="images/suenosealejasm.jpg" class="visible-sm hidden-xs">
-						<img src="images/suenosealejaxs.jpg" class="visible-xs hidden-sm">
-					-->
-					<img src="images/glitch3.png" class="hidden-xs hidden-sm">
-					</div>
-				</div>
-				<div class="slide">
-					<img src="images/glitch2.png" class="hidden-xs hidden-sm">
-				</div>
-				<div class="slide">
-					<img src="images/glitch4.png" class="hidden-xs hidden-sm">
-				</div>
-			</div>
-		</div>
-		<div id="section2" class="section" data-anchor="secondPage">
-			<div class="row">
-				<div class="col-md-12 contenido">
-					<h1 id="musica" >Música</h1>
-					<div class="hidden-xs hidden-sm">
-						<iframe src="https://embed.spotify.com/?uri=spotify%3Aartist%3A76Nj1E9ifPow1Xy7wgyOlW" width="853" height="480" frameborder="0" allowtransparency="true"></iframe>
-					</div>
-					<div class="visible-sm">
-						<iframe src="https://embed.spotify.com/?uri=spotify%3Aartist%3A76Nj1E9ifPow1Xy7wgyOlW" width="640" height="360" frameborder="0" allowtransparency="true"></iframe>
-					</div>
-					<div class="visible-xs">
-						<iframe src="https://embed.spotify.com/?uri=spotify%3Aartist%3A76Nj1E9ifPow1Xy7wgyOlW" width="270" height="280" frameborder="0" allowtransparency="true"></iframe>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="section3" class="section" data-anchor="thirdPage">
+	<div class="container">
+	<div id="fullpage">
+		<div id="section0" class="section" data-anchor="firstPage">
 			<div class="row">
 				<div class="col-md-12 col-sm-12 col-xs-12 contenido">
-					<h1 id="videos">Videos</h1>
-					<div class="hidden-sm hidden-xs">
-						<iframe width="853" height="480" src="https://www.youtube.com/embed/dc8O36ankWQ" frameborder="0" allowfullscreen></iframe>
+					<div class="hidden-xs hidden-sm">
+						<img src="images/manantial_640.jpg" alt="Logo Manantial EP">
 					</div>
-					<div class="visible-sm hidden-xs">
-						<iframe width="640" height="360" src="https://www.youtube.com/embed/dc8O36ankWQ" frameborder="0" allowfullscreen></iframe>
+					<div class="visible-sm">
+						<img src="images/manantial_480.jpg" alt="Logo Manantial EP">
 					</div>
 					<div class="visible-xs">
-						<iframe width="270" height="280" src="https://www.youtube.com/embed/dc8O36ankWQ" frameborder="0" allowfullscreen></iframe>
+						<img src="images/manantial_250.jpg" alt="Logo Manantial EP">
 					</div>
 				</div>
 			</div>
 		</div>
-		<div id="section4" class="section" data-anchor="fourthPage">
-			<div class="row">		
-				<div id="experimentos" class="col-md-12 col-sm-12 col-xs-12 contenido">
-					<div class="col-lg-12">
-		     			<h1>Experimentos</h1>
-		            </div>
-					<br>
-					<br>
-		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-		                <a class="thumbnail" href="#">
-		                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-		                </a>
-		            </div>
-		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-		                <a class="thumbnail" href="#">
-		                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-		                </a>
-		            </div>
-		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-		                <a class="thumbnail" href="#">
-		                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-		                </a>
-		            </div>
-		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-		                <a class="thumbnail" href="#">
-		                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-		                </a>
-		            </div>
-		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-		                <a class="thumbnail" href="#">
-		                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-		                </a>
-		            </div>
-		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-		                <a class="thumbnail" href="#">
-		                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-		                </a>
-		            </div>
-		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-		                <a class="thumbnail" href="#">
-		                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-		                </a>
-		            </div>
-		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-		                <a class="thumbnail" href="#">
-		                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-		                </a>
-		            </div>
-		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-		                <a class="thumbnail" href="#">
-		                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-		                </a>
-		            </div>
-		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-		                <a class="thumbnail" href="#">
-		                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-		                </a>
-		            </div>
-		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-		                <a class="thumbnail" href="#">
-		                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-		                </a>
-		            </div>
-		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-		                <a class="thumbnail" href="#">
-		                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-		                </a>
-		            </div>
+		<div id="section1" class="section" data-anchor="secondPage">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12 contenido">
+					<div class="slide">
+						<div class="hidden-xs hidden-sm">
+							<iframe src="https://embed.spotify.com/?uri=spotify:artist:76Nj1E9ifPow1Xy7wgyOlW&view=coverart" width="640" height="480" frameborder="0" allowtransparency="true"></iframe>
+						</div>
+						<div class="visible-sm">
+							<iframe src="https://embed.spotify.com/?uri=spotify:artist:76Nj1E9ifPow1Xy7wgyOlW&view=coverart" width="480" height="360" frameborder="0" allowtransparency="true"></iframe>
+						</div>
+						<div class="visible-xs">
+							<iframe src="https://embed.spotify.com/?uri=spotify:artist:76Nj1E9ifPow1Xy7wgyOlW&view=coverart" width="250" height="80" frameborder="0" allowtransparency="true"></iframe>
+						</div>
+					</div> 
+					<div class="slide">
+						<div class="hidden-xs hidden-sm">
+							<iframe width="640" height="480" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/214954323&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+						</div>	
+						<div class="visible-sm">
+							<iframe width="480" height="360" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/214954323&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+						</div>
+						<div class="visible-xs">
+							<iframe width="250" height="80" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/214954323&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div id="section5" class="section" data-anchor="fifthPage">
+		<div id="section2" class="section" data-anchor="thirdPage">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12 contenido">
+					<div class="hidden-sm hidden-xs">
+						<iframe width="640" height="480" src="https://www.youtube.com/embed/dc8O36ankWQ" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="visible-sm hidden-xs">
+						<iframe width="480" height="360" src="https://www.youtube.com/embed/dc8O36ankWQ" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="visible-xs">
+						<iframe width="250" height="180" src="https://www.youtube.com/embed/dc8O36ankWQ" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="section3" class="section" data-anchor="fourthPage">
 			<div class="row">
 				<div id="conciertos" class="col-md-12 contenido">
-				<h1>Conciertos</h1>
-				<table class="table table-responsive">
+				<table class="table table-responsive table-striped">
 					<thead>
 						<tr>
 							<th>Fecha</th>
@@ -208,37 +139,56 @@
 						</tr>
 					</tbody>
 				</table>
-				</div>
+				</div>		
 			</div>
 		</div>
-	</div>
-	</div>
-	<footer>
-		<div class="row">
-			<div id="contact" class="col-md-12 col-sm-12 col-xs-12 contenido"> 
-				<div class="centered">
-					<ul class="list-inline">
-						<li><a href="https://www.facebook.com/MUXEMUS/"><img src="images/facebook.svg" alt="Facebook Logo" id="facebook-logo" class="svg social-link"></a></li> 
-						<li><a href="https://www.instagram.com/muxe_mus/"><img src="images/instagram.svg" alt="Instagram Logo" id="instagram-logo" class="svg social-link"></a></li> 
-						<li><a href="https://www.youtube.com/channel/UC2Udb2ypRmBM5uF2azlRYFA"><img src="images/youtube.svg" alt="Youtube Logo" id="youtube-logo" class="svg social-link"></a></li>
-						<li><a href="https://open.spotify.com/artist/76Nj1E9ifPow1Xy7wgyOlW"><img src="images/spotify_rounded.svg" alt="Spotify Logo" id="spotify-logo" class="svg social-link"></a></li>  
-					</ul>
-					<div id="logo-footer">
-						<a href="index.html">
-							<div id="logo-img-footer" alt="MUXE Logo Image"></div>
-						</a>
-						MUXE © 2016 
+		<div id="section4" class="section" data-anchor="fifthPage">
+			<div class="row">
+				<div class="slide">
+					<img data-src="images/glitch1.png" class="hidden-xs hidden-sm">
+				</div>
+				<div class="slide">
+					<div id="main-image" class="col-md-12col-sm-12 col-xs-12 contenido">
+						<img data-src="images/glitch3.png" class="hidden-xs hidden-sm">
 					</div>
 				</div>
+				<div class="slide">
+					<img data-src="images/glitch2.png" class="hidden-xs hidden-sm">
+				</div>
+				<div class="slide">
+					<img data-src="images/glitch4.png" class="hidden-xs hidden-sm">
+				</div>
+				
 			</div>
 		</div>
-	</footer>
+	</div>
+	</div>
+<!-- <footer>
+	<div class="row">
+		<div id="contact" class="col-md-12 col-sm-12 col-xs-12 contenido"> 
+			<div class="centered">
+				<ul class="list-inline">
+					<li><a href="https://www.facebook.com/MUXEMUS/"><img src="images/facebook.svg" alt="Facebook Logo" id="facebook-logo" class="svg social-link"></a></li> 
+					<li><a href="https://www.instagram.com/muxe_mus/"><img src="images/instagram.svg" alt="Instagram Logo" id="instagram-logo" class="svg social-link"></a></li> 
+					<li><a href="https://www.youtube.com/channel/UC2Udb2ypRmBM5uF2azlRYFA"><img src="images/youtube.svg" alt="Youtube Logo" id="youtube-logo" class="svg social-link"></a></li>
+					<li><a href="https://open.spotify.com/artist/76Nj1E9ifPow1Xy7wgyOlW"><img src="images/spotify_rounded.svg" alt="Spotify Logo" id="spotify-logo" class="svg social-link"></a></li>  
+				</ul>
+				<div id="logo-footer">
+					<a href="index.html">
+						<div id="logo-img-footer" alt="MUXE Logo Image"></div>
+					</a>
+					MUXE © 2016 
+				</div>
+			</div>
+		</div>
+	</div>
+</footer> -->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/vendors/jquery.easings.min.js"></script>
 	<script type="text/javascript" src="js/vendors/scrolloverflow.min.js"></script>
+	<script src="js/vendors/jquery.easings.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
