@@ -14,37 +14,39 @@
 </head>
 <body>
 	<nav id="header-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-			<div id="logo-container" class="row center-block">				
-				<a href="index.html">
-					<div id="logo-img" alt="Logo image"></div>
-				</a>
-			</div>
-			<div id="main-nav" class="hidden-xs">
-				<div class="row">
-					<ul id="menu" class="list-inline">
-						<li data-menuanchor="firstPage" ><a href="#firstPage">MUXE</a></li>
-						<li data-menuanchor="secondPage" ><a href="#secondPage">Música</a></li>
-						<li data-menuanchor="thirdPage"><a href="#thirdPage">Videos</a></li>
-						<li data-menuanchor="fourthPage"><a href="#fourthPage">Conciertos</a></li>
-						<li data-menuanchor="fifthPage"><a href="#fifthPage">Experimentos</a></li>
-					</ul>
-				</div>
-			</div>
-
-			<div id="social-nav" class="hidden-sm hidden-xs pull-right">
-				<ul class="list-inline">
-					<li><a href="https://www.facebook.com/MUXEMUS/"><img src="images/facebook.svg" alt="Facebook Logo" id="facebook-logo" class="svg social-link"></a></li> 
-					<li><a href="https://www.instagram.com/muxe_mus/"><img src="images/instagram.svg" alt="Instagram Logo" id="instagram-logo" class="svg social-link"></a></li> 
-					<li><a href="https://www.youtube.com/channel/UC2Udb2ypRmBM5uF2azlRYFA"><img src="images/youtube.svg" alt="Youtube Logo" id="youtube-logo" class="svg social-link"></a></li>
-					<li><a href="https://open.spotify.com/artist/76Nj1E9ifPow1Xy7wgyOlW"><img src="images/spotify_rounded.svg" alt="Spotify Logo" id="spotify-logo" class="svg social-link"></a></li>  
+		<div id="logo-container" class="row center-block">				
+			<a href="index.html">
+				<div id="logo-img" alt="Logo image"></div>
+			</a>
+		</div>
+		<div id="main-nav" class="hidden-xs">
+			<div class="row">
+				<ul id="menu" class="list-inline">
+					<li data-menuanchor="firstPage"><a href="#firstPage">MUXE</a></li>
+					<li data-menuanchor="secondPage"><a href="#secondPage">EP</a></li>
+					<li data-menuanchor="thirdPage" ><a href="#thirdPage">Música</a></li>
+					<li data-menuanchor="fourthPage"><a href="#fourthPage">Videos</a></li>
+					<li data-menuanchor="fifthPage"><a href="#fifthPage">Conciertos</a></li>
+					<li data-menuanchor="sixthPage"><a href="#sixthPage">Experimentos</a></li>
 				</ul>
 			</div>
-		</nav>
+		</div>
+
+		<div id="social-nav" class="hidden-sm hidden-xs pull-right">
+			<ul class="list-inline">
+				<li><a href="https://www.facebook.com/MUXEMUS/"><img src="images/facebook.svg" alt="Facebook Logo" id="facebook-logo" class="svg social-link"></a></li> 
+				<li><a href="https://www.instagram.com/muxe_mus/"><img src="images/instagram.svg" alt="Instagram Logo" id="instagram-logo" class="svg social-link"></a></li> 
+				<li><a href="https://www.youtube.com/channel/UC2Udb2ypRmBM5uF2azlRYFA"><img src="images/youtube.svg" alt="Youtube Logo" id="youtube-logo" class="svg social-link"></a></li>
+				<li><a href="https://open.spotify.com/artist/76Nj1E9ifPow1Xy7wgyOlW"><img src="images/spotify_rounded.svg" alt="Spotify Logo" id="spotify-logo" class="svg social-link"></a></li>  
+			</ul>
+		</div>
+	</nav>
 	<div class="container">
 	<div id="fullpage">
+		<div><div class="row"></div></div>
 		<div id="section0" class="section" data-anchor="firstPage">
 			<div class="row">
-				<div class="col-md-12 col-sm-12 col-xs-12 contenido">
+				<div id="contenido-0" class="col-md-12 col-sm-12 col-xs-12 contenido">
 					<div class="hidden-xs hidden-sm">
 						<img src="images/manantial_640.jpg" alt="Logo Manantial EP">
 					</div>
@@ -60,7 +62,28 @@
 		<div id="section1" class="section" data-anchor="secondPage">
 			<div class="row">
 				<div class="col-md-12 col-sm-12 col-xs-12 contenido">
+					<h3>Envía tu nombre e email y recibirás un link para descargar <strong>Manantial</strong>, el último EP de <strong>MUXE</strong></h3>
+					<h4>[ Prometemos no enviarte spam ]</h4>
+					<br>
+					<form method="post" name="contact_form" action="process.php" class="form-inline">
+						<div class="form-group">
+						    <label for="name">Nombre:</label>
+						    <input type="text" name="name">
+						    &nbsp;&nbsp;&nbsp;&nbsp;
+						    <label for="email">Email:</label>
+						    <input type="text" name="email">
+						    &nbsp;&nbsp;&nbsp;&nbsp;
+						    <input type="submit" value="Enviar" class="btn btn-primary">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="section2" class="section" data-anchor="thirdPage">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12 contenido">
 					<div class="slide">
+						<h3>SPOTIFY</h3>
 						<div class="hidden-xs hidden-sm">
 							<iframe src="https://embed.spotify.com/?uri=spotify:artist:76Nj1E9ifPow1Xy7wgyOlW&view=coverart" width="640" height="480" frameborder="0" allowtransparency="true"></iframe>
 						</div>
@@ -72,6 +95,7 @@
 						</div>
 					</div> 
 					<div class="slide">
+						<h3>SOUNDCLOUD</h3>
 						<div class="hidden-xs hidden-sm">
 							<iframe width="640" height="480" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/214954323&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 						</div>	
@@ -82,67 +106,72 @@
 							<iframe width="250" height="80" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/214954323&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-		<div id="section2" class="section" data-anchor="thirdPage">
-			<div class="row">
-				<div class="col-md-12 col-sm-12 col-xs-12 contenido">
-					<div class="hidden-sm hidden-xs">
-						<iframe width="640" height="480" src="https://www.youtube.com/embed/dc8O36ankWQ" frameborder="0" allowfullscreen></iframe>
-					</div>
-					<div class="visible-sm hidden-xs">
-						<iframe width="480" height="360" src="https://www.youtube.com/embed/dc8O36ankWQ" frameborder="0" allowfullscreen></iframe>
-					</div>
-					<div class="visible-xs">
-						<iframe width="250" height="180" src="https://www.youtube.com/embed/dc8O36ankWQ" frameborder="0" allowfullscreen></iframe>
-					</div>
-				</div>
+				</div>		
 			</div>
 		</div>
 		<div id="section3" class="section" data-anchor="fourthPage">
 			<div class="row">
-				<div id="conciertos" class="col-md-12 contenido">
-				<table class="table table-responsive table-striped">
-					<thead>
-						<tr>
-							<th>Fecha</th>
-							<th>Lugar</th>
-							<th>Ciudad</th>
-							<th>Link</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>12/09/16</td>
-							<td>La Hamburguesería</td>
-							<td>Cali</td>
-							<td><a href="#">Link</a></td>
-						</tr>
-						<tr>
-							<td>24/09/16</td>
-							<td>Armando Records</td>
-							<td>Bogotá</td>
-							<td><a href="#">Link</a></td>
-						</tr>
-						<tr>
-							<td>15/10/16</td>
-							<td>La Piscina</td>
-							<td>Bogotá</td>
-							<td><a href="#">Link</a></td>
-						</tr>
-						<tr>
-							<td>31/10/16</td>
-							<td>Tereque Club</td>
-							<td>Ibagué</td>
-							<td><a href="#">Link</a></td>
-						</tr>
-					</tbody>
-				</table>
-				</div>		
+				<h3>TODO SE HACE CLARO EN MÍ (LYRIC VIDEO)</h3>
+				<div class="col-md-12 col-sm-12 col-xs-12 contenido">
+					<div class="col-md-12 col-sm-12 col-xs-12 contenido">
+						<div class="hidden-sm hidden-xs">
+							<iframe width="640" height="480" src="https://www.youtube.com/embed/dc8O36ankWQ" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<div class="visible-sm hidden-xs">
+							<iframe width="480" height="360" src="https://www.youtube.com/embed/dc8O36ankWQ" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<div class="visible-xs">
+							<iframe width="250" height="180" src="https://www.youtube.com/embed/dc8O36ankWQ" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div id="section4" class="section" data-anchor="fifthPage">
+			<h2>CONCIERTOS</h2>
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8 col-sm-8 col-xs-8 contenido">
+					<table class="table table-responsive table-striped">
+						<thead>
+							<tr>
+								<th>Fecha</th>
+								<th>Lugar</th>
+								<th>Ciudad</th>
+								<th>Link</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>12/09/16</td>
+								<td>La Hamburguesería</td>
+								<td>Cali</td>
+								<td><a href="#">Link</a></td>
+							</tr>
+							<tr>
+								<td>24/09/16</td>
+								<td>Armando Records</td>
+								<td>Bogotá</td>
+								<td><a href="#">Link</a></td>
+							</tr>
+							<tr>
+								<td>15/10/16</td>
+								<td>La Piscina</td>
+								<td>Bogotá</td>
+								<td><a href="#">Link</a></td>
+							</tr>
+							<tr>
+								<td>31/10/16</td>
+								<td>Tereque Club</td>
+								<td>Ibagué</td>
+								<td><a href="#">Link</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>	
+		<div id="section5" class="section" data-anchor="sixthPage">
 			<div class="row">
 				<div class="slide">
 					<img data-src="images/glitch1.png" class="hidden-xs hidden-sm">
@@ -158,33 +187,13 @@
 				<div class="slide">
 					<img data-src="images/glitch4.png" class="hidden-xs hidden-sm">
 				</div>
-				
 			</div>
 		</div>
 	</div>
 	</div>
-<!-- <footer>
-	<div class="row">
-		<div id="contact" class="col-md-12 col-sm-12 col-xs-12 contenido"> 
-			<div class="centered">
-				<ul class="list-inline">
-					<li><a href="https://www.facebook.com/MUXEMUS/"><img src="images/facebook.svg" alt="Facebook Logo" id="facebook-logo" class="svg social-link"></a></li> 
-					<li><a href="https://www.instagram.com/muxe_mus/"><img src="images/instagram.svg" alt="Instagram Logo" id="instagram-logo" class="svg social-link"></a></li> 
-					<li><a href="https://www.youtube.com/channel/UC2Udb2ypRmBM5uF2azlRYFA"><img src="images/youtube.svg" alt="Youtube Logo" id="youtube-logo" class="svg social-link"></a></li>
-					<li><a href="https://open.spotify.com/artist/76Nj1E9ifPow1Xy7wgyOlW"><img src="images/spotify_rounded.svg" alt="Spotify Logo" id="spotify-logo" class="svg social-link"></a></li>  
-				</ul>
-				<div id="logo-footer">
-					<a href="index.html">
-						<div id="logo-img-footer" alt="MUXE Logo Image"></div>
-					</a>
-					MUXE © 2016 
-				</div>
-			</div>
-		</div>
-	</div>
-</footer> -->
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/vendors/scrolloverflow.min.js"></script>
 	<script src="js/vendors/jquery.easings.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>

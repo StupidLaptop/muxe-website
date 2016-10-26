@@ -41,7 +41,7 @@ $(document).ready(function() {
         navigationTooltips: ['MUXE', 'Música', 'Videos', 'Experimentos', 'Conciertos'],
         showActiveTooltip: false,
         slidesNavigation: true,
-        slidesNavPosition: 'top',
+        slidesNavPosition: 'bottom',
 
         //Scrolling
         css3: true,

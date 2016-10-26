@@ -67,8 +67,19 @@ h1{
 	font-size: 60px;
 }
 
+h2{
+  font-size: 36px;
+}
+
+h3{
+  font-size: 28px;
+}
+
+h4{
+  font-size: 24px;
+}
 nav li {
-	font-size: 30px;
+	font-size: 28px;
 }
 
 li.active {
@@ -83,8 +94,12 @@ li.active a {
     h1 {
     	font-size: 30px;
     }
+
     #header-nav{
       height: 80px;
+    }
+    .fp-controlArrow{
+      display: none;
     }
 }
 
@@ -108,17 +123,20 @@ li.active a {
   }
 }
 
-
+input{
+  color: #000;
+}
 
 /** HEADER **/
 #header-nav {
   margin: auto; 
+  position:fixed;
   background: #000;
   padding-top: 15px;
 }
 
 #main-nav{
-	background: url(../images/P7.jpg);
+	background: url(../images/manantial_nav.jpg);
 	/*color: #C02BDE;*/
 }
 
@@ -188,12 +206,9 @@ svg:hover path{
 }
 
 /** SECTIONS **/
-.section{
-  margin-top: 20px;
-}
 
-.contenido{
-  padding-top: 30px;
+#contenido0 > div{
+  padding-top: 35px;
 }
 
 #conciertos th {
