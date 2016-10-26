@@ -38,19 +38,14 @@ div.load{
   opacity: 1;
 }
 
-th{
-
-	font-size: 25px;
-}
-
 p, td {
 	font-family: 'Montserrat', sans-serif;	
 	font-size: 16px;
 }
 
 a , a:link, a:visited{
-	color: #F31143;
-	/*color: #FE11F5; #D8348D;#908AF6*/
+	color: #AB60CB;
+	/*color: #FE11F5; #D8348D;#908AF6 #F31143*/
 	text-decoration: none;	
 }
 
@@ -183,7 +178,7 @@ input{
 }
 
 svg:hover path{
-	fill: #F31143;
+	fill: #AB60CB;
 }
 
 /**CONTAINER**/
@@ -224,3 +219,21 @@ svg:hover path{
 	background: #908AF6;
 }*/
 
+/**TABLE**/
+th{
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+}
+tr{
+  color: #908AF6;
+}
+/**FORM**/
+label{
+  font-size: 33px;
+  font-weight: normal;
+}
+input button{
+  height: 80%;
+  vertical-align: text-bottom;
+}
