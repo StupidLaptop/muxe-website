@@ -62,20 +62,20 @@
 		<div id="section1" class="section" data-anchor="secondPage">
 			<div class="row">
 				<div class="col-md-12 col-sm-12 col-xs-12 contenido">
-					<h3>Envía tu nombre e email y recibirás un link para descargar <strong>Manantial</strong>, el último EP de <strong>MUXE</strong></h3>
-					<h4>[ Prometemos no enviarte spam ]</h4>
+					<p class="p-descarga">Envía tu nombre e email y recibirás un link para descargar <strong>Manantial</strong>, el último EP de <strong>MUXE</strong></p>
+					<p>(Prometemos no enviarte spam)</p>
 					<br>
-					<form method="post" name="contact_form" action="process.php" class="form-inline">
+					<form method="post" name="contact_form" action="process.php" class="form-inline col-sm-12">
 						<div class="form-group">
-						    <label for="name">Nombre:</label>
-						    &nbsp;&nbsp;
-						    <input type="text" name="name">
-						    &nbsp;&nbsp;&nbsp;&nbsp;
-						    <label for="email">Email:</label>
-						    &nbsp;&nbsp;
-						    <input type="text" name="email">
-						    &nbsp;&nbsp;&nbsp;&nbsp;
-						    <input type="submit" value="Enviar" class="btn btn-primary">
+						    <label for="input-name">Nombre:</label>
+						    <input id="input-name" type="text" name="name" class="form-control info-input">
+						</div>
+						<div class="form-group">
+						    <label for="input-email">Email:</label>
+						    <input id="input-email" type="email" name="email" class="form-control info-input">
+						</div>
+						<div class="form-group">
+							<input id="input-button" type="submit" value="Enviar" class="btn btn-primary form-control">
 						</div>
 					</form>
 				</div>
@@ -86,6 +86,7 @@
 				<div class="col-md-12 col-sm-12 col-xs-12 contenido">
 					<div class="slide">
 						<h3>SPOTIFY</h3>
+						<br>
 						<div class="hidden-xs hidden-sm">
 							<iframe src="https://embed.spotify.com/?uri=spotify:artist:76Nj1E9ifPow1Xy7wgyOlW&view=coverart" width="640" height="480" frameborder="0" allowtransparency="true"></iframe>
 						</div>
@@ -98,6 +99,7 @@
 					</div> 
 					<div class="slide">
 						<h3>SOUNDCLOUD</h3>
+						<br>
 						<div class="hidden-xs hidden-sm">
 							<iframe width="640" height="480" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/214954323&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 						</div>	
@@ -113,7 +115,8 @@
 		</div>
 		<div id="section3" class="section" data-anchor="fourthPage">
 			<div class="row">
-				<h3>TODO SE HACE CLARO EN MÍ (LYRIC VIDEO)</h3>
+				<h4>TODO SE HACE CLARO EN MÍ (LYRIC VIDEO)</h4>
+				<br>
 				<div class="col-md-12 col-sm-12 col-xs-12 contenido">
 					<div class="col-md-12 col-sm-12 col-xs-12 contenido">
 						<div class="hidden-sm hidden-xs">
@@ -130,10 +133,12 @@
 			</div>
 		</div>
 		<div id="section4" class="section" data-anchor="fifthPage">
-			<h2>CONCIERTOS</h2>
+			<h3>CONCIERTOS</h3>
+			<br>
+			<br>
 			<div class="row">
-				<div class="col-md-2"></div>
-				<div class="col-md-8 col-sm-8 col-xs-8 contenido">
+				<div class="col-md-2 col-sm-2"></div>
+				<div class="col-md-8 col-sm-8 contenido">
 					<table class="table table-responsive">
 						<thead>
 							<tr>

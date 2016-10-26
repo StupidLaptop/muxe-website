@@ -1,4 +1,21 @@
 @font-face {
+    font-family: 'geometos_roundedregular';
+    src: url('geometos_rounded-webfont.woff2') format('woff2'),
+         url('geometos_rounded-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'geometosregular';
+    src: url('geometos-webfont.woff2') format('woff2'),
+         url('geometos-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
     font-family: 'bebas_neueregular';
     src: url('bebasneue-webfont.woff2') format('woff2'),
          url('bebasneue-webfont.woff') format('woff');
@@ -28,7 +45,7 @@ body {
   color: #fff;
   padding-top: 190px;
   text-align: center;
-  font-family: 'bebas_neueregular', sans-serif;
+  font-family: 'geometosregular', sans-serif;
   font-size: 20px;
   background: #000;
   background-image: url(../images/black_stars_bg_40.jpg)
@@ -38,25 +55,24 @@ div.load{
   opacity: 1;
 }
 
-p, td {
-	font-family: 'Montserrat', sans-serif;	
+p, td {	
 	font-size: 16px;
 }
 
 a , a:link, a:visited{
-	color: #AB60CB;
-	/*color: #FE11F5; #D8348D;#908AF6 #F31143*/
+	color: #FFF;
+	/*color:  #AB60CB #FE11F5; #D8348D;#908AF6 #F31143*/
 	text-decoration: none;	
 }
 
 a:active {
 	text-decoration: none;
-	color: #FFF;
+	color: #FFD700;
 }
 
 a:hover {
 	text-decoration: none;
-	color: #FFF;
+	color: #FFD700;
 }
 h1{
 	font-size: 60px;
@@ -74,7 +90,7 @@ h4{
   font-size: 24px;
 }
 nav li {
-	font-size: 28px;
+	font-size: 20px;
 }
 
 li.active {
@@ -82,7 +98,7 @@ li.active {
 }
 
 li.active a {
-	color: #FFF;
+	color: #FFD700;
 }
 
 @media screen and (max-width: 480px) {
@@ -109,28 +125,68 @@ li.active a {
     }
 }
 
+@media (max-width: 768px){
+  #main-nav ul{
+    padding: 0px;
+  }
+  #main-nav li {
+    font-size: 15px;
+    height: 100%;
+    vertical-align: top;
+  }
 
-@media (min-width: 768px) {
+  #main-nav{
+    height: 21px;
+
+  }  
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  p.p-descarga {
+    font-size: 16px;
+  }
+  label{
+    font-size: 14px;
+  }
+  input#input-email {
+    width: 150px;
+  }
+  input#input-name {
+    width: 150px;
+  }
+}
+
+@media (min-width: 769px) {
   nav #header-nav {
     width: 750px;
     height: 90px;
   }
 }
+
 @media (min-width: 992px) {
   #header-nav {
     width: 970px;
     height: 130px;
   }
 }
+
 @media (min-width: 1200px) {
   #header-nav {
     width: 1170px;
-    height: 130px;
+    height: 110px;
   }
 }
 
 input{
   color: #000;
+}
+
+input#input-button{
 }
 
 /** HEADER **/
@@ -142,7 +198,7 @@ input{
 }
 
 #main-nav{
-	background: url(../images/manantial_nav.jpg);
+	background: #111;
 	/*color: #C02BDE;*/
 }
 
@@ -189,21 +245,20 @@ input{
 }
 
 svg:hover path{
-	fill: #AB60CB;
+	fill: #FFD700;
 }
 
 /**CONTAINER**/
 
 .container {
 	height: 100%;
-	background: rgba(20, 20, 20, .65);
+	background: rgba(20, 20, 20, .5);
 	padding-left:30px;
 	padding-right:30px;	
 }
 
 .container h1{
 	color: #FFF;
-	/*color: #D90E26;*/
 }
 #main-image {
 	margin-left: auto;
@@ -232,19 +287,32 @@ svg:hover path{
 
 /**TABLE**/
 th{
-  color: #fff;
-  font-size: 22px;
+  color: #666;
+  font-size: 18px;
   text-align: center;
 }
-tr{
-  color: #908AF6;
+td{
+  color: #fff;
 }
 /**FORM**/
 label{
-  font-size: 33px;
+  font-size: 20px;
   font-weight: normal;
+  margin-left: 15px;
 }
-input button{
-  height: 80%;
-  vertical-align: text-bottom;
+
+p.p-descarga{
+  font-size: 16px;
+} 
+
+input#input-name{
+  vertical-align: bottom;
+}
+
+input#input-email{
+  vertical-align: bottom;
+}
+
+input#input-button{
+  margin-left: 5px;
 }
