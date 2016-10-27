@@ -55,7 +55,7 @@ div.load{
   opacity: 1;
 }
 
-p, td {	
+p{	
 	font-size: 16px;
 }
 
@@ -88,9 +88,6 @@ h3{
 
 h4{
   font-size: 24px;
-}
-nav li {
-	font-size: 20px;
 }
 
 li.active {
@@ -126,9 +123,13 @@ li.active a {
     h4{
       font-size: 14px;
     }
+
+    table{
+      font-size: 8px;
+    }
 }
 
-@media (min-width: 768px){
+@media (max-width: 768px){
   #main-nav ul{
     padding: 0px;
   }
@@ -301,6 +302,7 @@ th{
 }
 td{
   color: #fff;
+  font-size: 16px;
 }
 /**FORM**/
 label{
