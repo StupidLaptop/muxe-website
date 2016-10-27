@@ -106,10 +106,6 @@ li.active a {
       display: none;
     }
 
-    p{
-      font-size: 12px;
-    }
-
     #footer{
       position: fixed;
       width: 100%;
@@ -126,13 +122,13 @@ li.active a {
 
   th{
     color: #666;
-    font-size: 14px;
+    font-size: 8px;
     text-align: center;
   }
 
   td{
     color: #fff;
-    font-size: 10px;
+    font-size: 6px;
   }
 
   input#input-email {
@@ -141,9 +137,19 @@ li.active a {
   input#input-name {
     width: 100%;
   }
+
+  p.p-descarga{
+    font-size: 12px;
+  }
+  p{
+    font-size: 10px;
+  }
+  label{
+    font-size: 16px;
+  }
 }
 
-@media (max-width: 768px){
+@media (min-width: 736px){
   #main-nav ul{
     padding: 0px;
   }
@@ -164,12 +170,16 @@ li.active a {
     font-size: 18px;
   }
 
-  p.p-descarga {
-    font-size: 16px;
-  }
   label{
     font-size: 14px;
   }
+
+  #footer{
+    position: fixed;
+    width: 100%;
+    bottom: 100px;
+  }
+
   input#input-email {
     width: 150px;
   }
@@ -177,10 +187,15 @@ li.active a {
     width: 150px;
   }
 
-  #footer{
-    position: fixed;
-    width: 100%;
-    bottom: 100px;
+  th{
+    color: #666;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  td{
+    color: #fff;
+    font-size: 16px;
   }
 }
 
@@ -198,7 +213,7 @@ li.active a {
   }
 
   input#input-name{
-  vertical-align: bottom;
+    vertical-align: bottom;
   }
 
   input#input-email{
@@ -219,6 +234,11 @@ li.active a {
     color: #fff;
     font-size: 16px;
   }
+
+  p.p-descarga {
+    font-size: 16px;
+  }
+
 }
 
 @media (min-width: 992px) {
@@ -343,9 +363,5 @@ label{
   font-weight: normal;
   margin-left: 15px;
 }
-
-p.p-descarga{
-  font-size: 16px;
-} 
 
 
