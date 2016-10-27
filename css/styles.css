@@ -329,7 +329,7 @@ svg:hover path{
   }
 
 }
-/*** LARGER DISPLAYS ***/
+/* ** LARGER DISPLAYS **
 @media (min-width: 992px) {
   #header-nav {
     width: 970px;
@@ -342,7 +342,7 @@ svg:hover path{
     width: 1170px;
     height: 110px;
   }
-}
+} */
 
 
 
