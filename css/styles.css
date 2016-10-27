@@ -329,11 +329,65 @@ svg:hover path{
   }
 
 }
-/* ** LARGER DISPLAYS **
+ ** LARGER DISPLAYS **
 @media (min-width: 992px) {
   #header-nav {
     width: 970px;
     height: 130px;
+  }
+
+    h3{
+    font-size: 15px;
+    letter-spacing: 5px;
+  }
+  .svg {
+   width:36px;
+  }
+  #main-nav li {
+    font-size: 15px;
+    vertical-align: top;
+    letter-spacing: 5px;
+  }
+
+  #main-nav{
+    height: 21px;
+
+  }  
+
+  nav #header-nav {
+    width: 750px;
+    height: 90px;
+  }
+
+  #main-nav li{
+    font-size: 15px;
+    vertical-align: top;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  input#input-email{
+    vertical-align: bottom;
+    width: 465px;
+  }
+
+  input#input-button{
+    margin-left: 8px;
+  }
+
+  th{
+    color: #666;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  td{
+    color: #fff;
+    font-size: 16px;
+  }
+
+  p.p-descarga {
+    font-size: 16px;
   }
 }
 
@@ -342,7 +396,61 @@ svg:hover path{
     width: 1170px;
     height: 110px;
   }
-} */
+
+    h3{
+    font-size: 15px;
+    letter-spacing: 5px;
+  }
+  .svg {
+   width:36px;
+  }
+  #main-nav li {
+    font-size: 15px;
+    vertical-align: top;
+    letter-spacing: 5px;
+  }
+
+  #main-nav{
+    height: 21px;
+
+  }  
+
+  nav #header-nav {
+    width: 750px;
+    height: 90px;
+  }
+
+  #main-nav li{
+    font-size: 15px;
+    vertical-align: top;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  input#input-email{
+    vertical-align: bottom;
+    width: 465px;
+  }
+
+  input#input-button{
+    margin-left: 8px;
+  }
+
+  th{
+    color: #666;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  td{
+    color: #fff;
+    font-size: 16px;
+  }
+
+  p.p-descarga {
+    font-size: 16px;
+  }
+} 
 
 
 
