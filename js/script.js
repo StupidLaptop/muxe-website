@@ -35,17 +35,17 @@ $(document).ready(function() {
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage'],
+        anchors:['firstPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['MUXE', 'Música', 'Videos', 'Experimentos', 'Conciertos'],
+        navigationTooltips: ['MUXE', 'Música', 'Videos', 'Conciertos', 'Visual'],
         showActiveTooltip: false,
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
 
         //Scrolling
         css3: true,
-        scrollingSpeed: 700,
+        scrollingSpeed: 300,
         autoScrolling: true,
         fitToSection: true,
         fitToSectionDelay: 1000,

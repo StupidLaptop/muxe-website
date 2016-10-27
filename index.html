@@ -13,6 +13,8 @@
 	<title>MUXE</title>
 </head>
 <body>
+
+<!-- ************************************************** NAVBAR ********************************************* -->
 	<nav id="header-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div id="logo-container" class="row center-block">				
 			<a href="index.html">
@@ -23,7 +25,6 @@
 			<div class="row">
 				<ul id="menu" class="list-inline">
 					<li data-menuanchor="firstPage"><a href="#firstPage">MUXE</a></li>
-					<li data-menuanchor="secondPage"><a href="#secondPage">EP</a></li>
 					<li data-menuanchor="thirdPage" ><a href="#thirdPage">Música</a></li>
 					<li data-menuanchor="fourthPage"><a href="#fourthPage">Videos</a></li>
 					<li data-menuanchor="fifthPage"><a href="#fifthPage">Conciertos</a></li>
@@ -44,11 +45,13 @@
 	<div class="container">
 	<div id="fullpage">
 		<div><div class="row"></div></div>
+
+<!-- ************************************************** MUXE ********************************************* -->
 		<div id="section0" class="section" data-anchor="firstPage">
 			<div class="row">
 				<div id="contenido-0" class="col-md-12 col-sm-12 col-xs-12 contenido">
 					<div id="ep-cover-md" class="hidden-xs hidden-sm">
-						<img src="images/manantial_640.jpg" alt="Logo Manantial EP">
+						<img src="images/manantial_560.jpg" alt="Logo Manantial EP">
 					</div>
 					<div class="visible-sm">
 						<img src="images/manantial_480.jpg" alt="Logo Manantial EP">
@@ -58,29 +61,22 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div id="section1" class="section" data-anchor="secondPage">
+			<br>
 			<div class="row">
-				<div class="col-md-12 col-sm-12 col-xs-12 contenido">
-					<p class="p-descarga">Envía tu nombre e email y recibirás un link para descargar <strong>Manantial</strong>, el último EP de <strong>MUXE</strong></p>
-					<p>(Prometemos no enviarte spam)</p>
-					<br>
-					<form method="post" name="contact_form" action="process.php" class="form-inline col-sm-12">
-						<div class="form-group">
-						    <label for="input-name">Nombre:</label>
-						    <input id="input-name" type="text" name="name" class="form-control info-input">
-						</div>
-						<div class="form-group">
-						    <label for="input-email">Email:</label>
-						    <input id="input-email" type="email" name="email" class="form-control info-input">
-						</div>
-						<div class="form-group">
-							<input id="input-button" type="submit" value="Enviar" class="btn btn-primary form-control">
-						</div>
-					</form>
-				</div>
+			<p class="p-descarga">Regístrate para descargar <strong>*MANANTIAL*</strong> de <strong>MUXE</strong></p>
+				<form method="post" name="contact_form" action="mailto:diego.bocanegra@gmail.com?subject=manantial-ep" class="form-inline col-sm-12">
+					<div class="form-group">
+					    <input id="input-email" type="email" name="email" class="form-control info-input" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<input id="input-button" type="submit" value="Enviar" class="btn btn-primary form-control">
+					</div>
+				</form>
 			</div>
 		</div>
+
+<!-- ************************************************** MUSICA ********************************************* -->
+
 		<div id="section2" class="section" data-anchor="thirdPage">
 			<div class="row">
 				<div class="col-md-12 col-sm-12 col-xs-12 contenido">
@@ -88,50 +84,53 @@
 						<h3>SPOTIFY</h3>
 						<br>
 						<div class="hidden-xs hidden-sm">
-							<iframe src="https://embed.spotify.com/?uri=spotify:artist:76Nj1E9ifPow1Xy7wgyOlW&view=coverart" width="640" height="480" frameborder="0" allowtransparency="true"></iframe>
+							<iframe src="https://embed.spotify.com/?uri=spotify:artist:76Nj1E9ifPow1Xy7wgyOlW&view=coverart" width="560" height="450" frameborder="0" allowtransparency="true"></iframe>
 						</div>
 						<div class="visible-sm">
 							<iframe src="https://embed.spotify.com/?uri=spotify:artist:76Nj1E9ifPow1Xy7wgyOlW&view=coverart" width="480" height="360" frameborder="0" allowtransparency="true"></iframe>
 						</div>
 						<div class="visible-xs">
-							<iframe src="https://embed.spotify.com/?uri=spotify:artist:76Nj1E9ifPow1Xy7wgyOlW&view=coverart" width="250" height="80" frameborder="0" allowtransparency="true"></iframe>
+							<iframe src="https://embed.spotify.com/?uri=spotify:artist:76Nj1E9ifPow1Xy7wgyOlW&view=coverart" width="200" height="80" frameborder="0" allowtransparency="true"></iframe>
 						</div>
 					</div> 
 					<div class="slide">
 						<h3>SOUNDCLOUD</h3>
 						<br>
 						<div class="hidden-xs hidden-sm">
-							<iframe width="640" height="480" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/214954323&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+							<iframe width="560" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/214954323&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 						</div>	
 						<div class="visible-sm">
 							<iframe width="480" height="360" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/214954323&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 						</div>
 						<div class="visible-xs">
-							<iframe width="250" height="80" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/214954323&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+							<iframe width="200" height="80" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/214954323&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 						</div>
 					</div>
 				</div>		
 			</div>
 		</div>
+<!-- ************************************************** VIDEO ********************************************* -->
 		<div id="section3" class="section" data-anchor="fourthPage">
 			<div class="row">
-				<h4>TODO SE HACE CLARO EN MÍ (LYRIC VIDEO)</h4>
+				<h3>TODO SE HACE CLARO EN MÍ (LYRIC VIDEO)</h3>
 				<br>
 				<div class="col-md-12 col-sm-12 col-xs-12 contenido">
 					<div class="col-md-12 col-sm-12 col-xs-12 contenido">
 						<div class="hidden-sm hidden-xs">
-							<iframe width="640" height="480" src="https://www.youtube.com/embed/dc8O36ankWQ" frameborder="0" allowfullscreen></iframe>
+							<iframe width="560" height="480" src="https://www.youtube.com/embed/dc8O36ankWQ" frameborder="0" allowfullscreen></iframe>
 						</div>
 						<div class="visible-sm hidden-xs">
 							<iframe width="480" height="360" src="https://www.youtube.com/embed/dc8O36ankWQ" frameborder="0" allowfullscreen></iframe>
 						</div>
 						<div class="visible-xs">
-							<iframe width="250" height="180" src="https://www.youtube.com/embed/dc8O36ankWQ" frameborder="0" allowfullscreen></iframe>
+							<iframe width="200" height="180" src="https://www.youtube.com/embed/dc8O36ankWQ" frameborder="0" allowfullscreen></iframe>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
+<!-- ************************************************** CONCIERTOS ********************************************* -->
 		<div id="section4" class="section" data-anchor="fifthPage">
 			<h3>CONCIERTOS</h3>
 			<br class="hidden-xs">
@@ -177,12 +176,14 @@
 					</table>
 				</div>
 			</div>
-		</div>	
+		</div>
+
+<!-- ************************************************** VISUAL ********************************************* -->	
 		<div id="section5" class="section" data-anchor="sixthPage">
 			<div class="row">
 				<div class="slide">
 					<div class="hidden-sm hidden-xs">
-						<img src="images/experimentos/experimento1_md.png" alt="Experimento 1">
+						<img src="images/experimentos/experimento1_560.png" alt="Experimento 1">
 					</div>
 					<div class="visible-sm hidden-xs">
 						<img src="images/experimentos/experimento1_sm.png" alt="Experimento 1">
@@ -193,7 +194,7 @@
 				</div>
 				<div class="slide">
 					<div class="hidden-sm hidden-xs">
-						<img src="images/experimentos/experimento2_md.png" alt="Experimento 1">
+						<img src="images/experimentos/experimento2_560.png" alt="Experimento 1">
 					</div>
 					<div class="visible-sm hidden-xs">
 						<img src="images/experimentos/experimento2_sm.png" alt="Experimento 1">
@@ -204,7 +205,7 @@
 				</div>
 				<div class="slide">
 					<div class="hidden-sm hidden-xs">
-						<img src="images/experimentos/experimento3_md.png" alt="Experimento 1">
+						<img src="images/experimentos/experimento3_560.png" alt="Experimento 1">
 					</div>
 					<div class="visible-sm hidden-xs">
 						<img src="images/experimentos/experimento3_sm.png" alt="Experimento 1">
@@ -215,7 +216,7 @@
 				</div>
 				<div class="slide">
 					<div class="hidden-sm hidden-xs">
-						<img src="images/experimentos/experimento4_md.jpg" alt="Experimento 1">
+						<img src="images/experimentos/experimento4_560.jpg" alt="Experimento 1">
 					</div>
 					<div class="visible-sm hidden-xs">
 						<img src="images/experimentos/experimento4_sm.jpg" alt="Experimento 1">
@@ -226,7 +227,7 @@
 				</div>
 				<div class="slide">
 					<div class="hidden-sm hidden-xs">
-						<img src="images/experimentos/experimento5_md.png" alt="Experimento 1">
+						<img src="images/experimentos/experimento5_560.png" alt="Experimento 1">
 					</div>
 					<div class="visible-sm hidden-xs">
 						<img src="images/experimentos/experimento5_sm.png" alt="Experimento 1">
@@ -237,7 +238,7 @@
 				</div>
 				<div class="slide">
 					<div class="hidden-sm hidden-xs">
-						<img src="images/experimentos/experimento6_md.png" alt="Experimento 1">
+						<img src="images/experimentos/experimento6_560.png" alt="Experimento 1">
 					</div>
 					<div class="visible-sm hidden-xs">
 						<img src="images/experimentos/experimento6_sm.png" alt="Experimento 1">
@@ -248,7 +249,7 @@
 				</div>
 				<div class="slide">
 					<div class="hidden-sm hidden-xs">
-						<img src="images/experimentos/experimento7_md.png" alt="Experimento 1">
+						<img src="images/experimentos/experimento7_560.png" alt="Experimento 1">
 					</div>
 					<div class="visible-sm hidden-xs">
 						<img src="images/experimentos/experimento7_sm.png" alt="Experimento 1">
@@ -259,7 +260,7 @@
 				</div>
 				<div class="slide">
 					<div class="hidden-sm hidden-xs">
-						<img src="images/experimentos/experimento8_md.png" alt="Experimento 1">
+						<img src="images/experimentos/experimento8_560.png" alt="Experimento 1">
 					</div>
 					<div class="visible-sm hidden-xs">
 						<img src="images/experimentos/experimento8_sm.png" alt="Experimento 1">
@@ -270,7 +271,7 @@
 				</div>
 				<div class="slide">
 					<div class="hidden-sm hidden-xs">
-						<img src="images/experimentos/experimento9_md.png" alt="Experimento 1">
+						<img src="images/experimentos/experimento9_560.png" alt="Experimento 1">
 					</div>
 					<div class="visible-sm hidden-xs">
 						<img src="images/experimentos/experimento9_sm.png" alt="Experimento 1">
@@ -281,7 +282,7 @@
 				</div>
 				<div class="slide">
 					<div class="hidden-sm hidden-xs">
-						<img src="images/experimentos/experimento10_md.png" alt="Experimento 1">
+						<img src="images/experimentos/experimento10_560.png" alt="Experimento 1">
 					</div>
 					<div class="visible-sm hidden-xs">
 						<img src="images/experimentos/experimento10_sm.png" alt="Experimento 1">
@@ -293,6 +294,7 @@
 			</div>
 		</div>
 	</div>
+<!-- ************************************************** FOOTER ********************************************* -->
 	<footer id="footer" class="visible-sm visible-xs">
 		<div id="social-nav-footer">
 			<ul class="list-inline">

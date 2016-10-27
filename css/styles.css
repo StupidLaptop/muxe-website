@@ -1,3 +1,4 @@
+/** FONTS **/
 @font-face {
     font-family: 'geometos_roundedregular';
     src: url('geometos_rounded-webfont.woff2') format('woff2'),
@@ -11,14 +12,6 @@
     font-family: 'geometosregular';
     src: url('geometos-webfont.woff2') format('woff2'),
          url('geometos-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'bebas_neueregular';
-    src: url('bebasneue-webfont.woff2') format('woff2'),
-         url('bebasneue-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -51,14 +44,19 @@ body {
   background-image: url(../images/black_stars_bg_40.jpg)
 }
 
-div.load{
-  opacity: 1;
+/** GENERAL **/
+
+p, td{	
+	font-size: 15px;
+  font-family: 'Montserrat', sans-serif; 
 }
 
-p{	
-	font-size: 16px;
+strong{
+  font-family: 'geometosregular';
+  letter-spacing: 5px;
 }
 
+/**LINKS**/
 a , a:link, a:visited{
 	color: #FFD700;
 	/*color:  #AB60CB #FE11F5; #D8348D;#908AF6 #F31143*/
@@ -74,21 +72,8 @@ a:hover {
 	text-decoration: none;
 	color: #FFF;
 }
-h1{
-	font-size: 60px;
-}
 
-h2{
-  font-size: 36px;
-}
-
-h3{
-  font-size: 28px;
-}
-
-h4{
-  font-size: 24px;
-}
+/**LISTS**/
 
 li.active {
 	background-color: rgba(0,0,0,.6);	
@@ -98,33 +83,119 @@ li.active a {
 	color: #FFF;
 }
 
+/**FORM**/
+
+label{
+  font-weight: normal;
+  margin-left: 15px;
+}
+
+input{
+  color: #000;
+}
+
+/** SVG SOCIAL NAVBAR & FOOTER BUTTONS **/
+.svg path {
+  fill: #FFF;
+}
+
+svg:hover path{
+  fill: #FFD700;
+}
+
+/** SECTION SPECIFIC SETTINGS **/
+
+/** HEADER **/
+
+#header-nav {
+  margin: auto; 
+  position:fixed;
+  background: #000;
+  padding-top: 15px;
+}
+
+#main-nav{
+  background: #111;
+}
+
+#main-nav ul{
+  margin-bottom: 0px;
+}
+
+
+#social-nav{
+  position: fixed;
+  right: 50px;
+  top: 22px;
+
+}
+
+
+#logo-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  background: url('../images/muxe_rb_xs.jpg') no-repeat;
+  width: 120px;
+  height: 54px;
+}
+
+#logo-img-footer {
+  margin-left: auto;
+  margin-right: auto;
+  background: url('../images/muxe-black-cropped-xxs.png') no-repeat;
+  width: 80px;
+  height: 36px;
+}
+
+
+/**CONTAINER**/
+
+.container {
+  height: 100%;
+  background: rgba(20, 20, 20, .5);
+  padding-left:50px;
+  padding-right:50px; 
+}
+
+#main-image {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+#contenido0{
+  padding-top: 400px
+}
+/**** RESPONSIVE SETTINGS ****/
+
+/***iPhone4 and smaller ***/
 @media screen and (max-width: 480px) {
   #footer{
     display: none;
   }
 }
 
+/***Bigger than iPhone4 smaller than iPad portrait ***/
 @media screen and (max-width: 736px) {
-    #header-nav{
-      height: 80px;
-    }
-    .fp-controlArrow{
-      display: none;
-    }
+  #header-nav{
+    height: 80px;
+  }
+  .fp-controlArrow{
+    display: none;
+  }
 
-    #footer{
-      position: fixed;
-      width: 100%;
-      top: 80px;
-    }
+  #footer{
+    position: fixed;
+    width: 100%;
+    top: 80px;
+  }
 
-    h3{
-      font-size: 18px;
-    }
+  h3{
+    font-size: 11px;
+    letter-spacing: 4px;
+  }
 
-    h4{
-      font-size: 14px;
-    }
 
   th{
     color: #666;
@@ -137,21 +208,13 @@ li.active a {
     font-size: 6px;
   }
 
-  input#input-email {
-    width: 100%;
-  }
-  input#input-name {
-    width: 100%;
-  }
-
-  p.p-descarga{
-    font-size: 12px;
-  }
   p{
     font-size: 10px;
   }
+
   label{
-    font-size: 16px;
+    font-size: 15px;
+    letter-spacing: 5px;
   }
 
   .svg {
@@ -159,9 +222,14 @@ li.active a {
   }
 }
 
+/***Bigger than iPhone4 smaller than iPad portrait ***/
 @media (min-width: 737px){
+  h3{
+    font-size: 13px;
+    letter-spacing: 4px;
+  }
   .svg {
-   width:36px;
+   width:28px;
   }
   #main-nav ul{
     padding: 0px;
@@ -176,13 +244,6 @@ li.active a {
     height: 18px;
 
   }  
-  h3 {
-    font-size: 20px;
-  }
-
-  h4 {
-    font-size: 18px;
-  }
 
   label{
     font-size: 14px;
@@ -195,15 +256,12 @@ li.active a {
   }
 
   input#input-email {
-    width: 150px;
-  }
-  input#input-name {
-    width: 150px;
+    width: 270px;
   }
 
   th{
     color: #666;
-    font-size: 18px;
+    font-size: 13px;
     text-align: center;
   }
 
@@ -213,7 +271,16 @@ li.active a {
   }
 }
 
+/*** Laptops and larger displays ***/ 
 @media (min-width: 769px) {
+ 
+  h3{
+    font-size: 15px;
+    letter-spacing: 5px;
+  }
+  .svg {
+   width:36px;
+  }
   #main-nav li {
     font-size: 15px;
     vertical-align: top;
@@ -237,21 +304,18 @@ li.active a {
     padding-right: 20px;
   }
 
-  input#input-name{
-    vertical-align: bottom;
-  }
-
   input#input-email{
     vertical-align: bottom;
+    width: 465px;
   }
 
   input#input-button{
-    margin-left: 5px;
+    margin-left: 8px;
   }
 
   th{
     color: #666;
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
   }
 
@@ -265,7 +329,7 @@ li.active a {
   }
 
 }
-
+/*** LARGER DISPLAYS ***/
 @media (min-width: 992px) {
   #header-nav {
     width: 970px;
@@ -280,111 +344,13 @@ li.active a {
   }
 }
 
-input{
-  color: #000;
-}
-
-input#input-button{
-}
-
-/** HEADER **/
-#header-nav {
-  margin: auto; 
-  position:fixed;
-  background: #000;
-  padding-top: 15px;
-}
-
-#main-nav{
-	background: #111;
-	/*color: #C02BDE;*/
-}
-
-#main-nav ul{
-	margin-bottom: 0px;
-}
 
 
-#social-nav{
-	position: fixed;
-	right: 50px;
-	top: 22px;
 
-}
 
-#ep-cover-md{
-  padding-top: 50px;
-}
 
-#logo-img {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  background: url('../images/muxe_rb_xs.jpg') no-repeat;
-  width: 120px;
-  height: 54px;
-}
 
-#logo-img-footer {
-  margin-left: auto;
-  margin-right: auto;
-  background: url('../images/muxe-black-cropped-xxs.png') no-repeat;
-  width: 80px;
-  height: 36px;
-}
 
-.svg path {
-	fill: #FFF;
-}
 
-svg:hover path{
-	fill: #FFD700;
-}
-
-/**CONTAINER**/
-
-.container {
-	height: 100%;
-	background: rgba(20, 20, 20, .5);
-	padding-left:30px;
-	padding-right:30px;	
-}
-
-.container h1{
-	color: #FFF;
-}
-#main-image {
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 50px;
-}
-
-/** SECTIONS **/
-
-#contenido0 > div{
-  padding-top: 35px;
-}
-
-#conciertos th {
-	text-align: left;
-}
-
-#conciertos td {
-	text-align: left;
-}
-
-/**CONTROLS**/
-/*.selected-index a{
-	background: #908AF6;
-}*/
-
-/**TABLE**/
-
-/**FORM**/
-label{
-  font-size: 20px;
-  font-weight: normal;
-  margin-left: 15px;
-}
 
 
