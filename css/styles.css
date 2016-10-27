@@ -60,19 +60,19 @@ p{
 }
 
 a , a:link, a:visited{
-	color: #FFF;
+	color: #FFD700;
 	/*color:  #AB60CB #FE11F5; #D8348D;#908AF6 #F31143*/
 	text-decoration: none;	
 }
 
 a:active {
 	text-decoration: none;
-	color: #FFD700;
+	color: #FFF;
 }
 
 a:hover {
 	text-decoration: none;
-	color: #FFD700;
+	color: #FFF;
 }
 h1{
 	font-size: 60px;
@@ -95,7 +95,13 @@ li.active {
 }
 
 li.active a {
-	color: #FFD700;
+	color: #FFF;
+}
+
+@media screen and (max-width: 480px) {
+  #footer{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 736px) {
@@ -109,7 +115,7 @@ li.active a {
     #footer{
       position: fixed;
       width: 100%;
-      top: 100px;
+      top: 80px;
     }
 
     h3{
@@ -147,19 +153,27 @@ li.active a {
   label{
     font-size: 16px;
   }
+
+  .svg {
+   width:24px;
+  }
 }
 
-@media (min-width: 736px){
+@media (min-width: 737px){
+  .svg {
+   width:36px;
+  }
   #main-nav ul{
     padding: 0px;
   }
   #main-nav li {
-    font-size: 15px;
+    font-size: 13px;
     vertical-align: top;
+    letter-spacing: 4px;
   }
 
   #main-nav{
-    height: 21px;
+    height: 18px;
 
   }  
   h3 {
@@ -177,7 +191,7 @@ li.active a {
   #footer{
     position: fixed;
     width: 100%;
-    bottom: 100px;
+    bottom: 60px;
   }
 
   input#input-email {
@@ -200,13 +214,25 @@ li.active a {
 }
 
 @media (min-width: 769px) {
+  #main-nav li {
+    font-size: 15px;
+    vertical-align: top;
+    letter-spacing: 5px;
+  }
+
+  #main-nav{
+    height: 21px;
+
+  }  
+
+
   nav #header-nav {
     width: 750px;
     height: 90px;
   }
 
   #main-nav li{
-    font-size: 18px;
+    font-size: 15px;
     vertical-align: top;
     padding-left: 20px;
     padding-right: 20px;
@@ -272,7 +298,6 @@ input#input-button{
 
 #main-nav{
 	background: #111;
-  height: 24px;
 	/*color: #C02BDE;*/
 }
 
@@ -308,10 +333,6 @@ input#input-button{
 
 .svg path {
 	fill: #FFF;
-}
-
-.svg {
-	width:36px;
 }
 
 svg:hover path{
