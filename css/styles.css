@@ -225,7 +225,6 @@ li.active a {
 
   }  
 
-
   nav #header-nav {
     width: 750px;
     height: 90px;
@@ -313,6 +312,9 @@ input#input-button{
 
 }
 
+#ep-cover-md{
+  padding-top: 50px;
+}
 
 #logo-img {
   margin-left: auto;
