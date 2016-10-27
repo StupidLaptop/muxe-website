@@ -101,37 +101,39 @@ li.active a {
 	color: #FFD700;
 }
 
-@media screen and (max-width: 480px) {
-    h1 {
-    	font-size: 30px;
-    }
-    h2 {
-      font-size: 26px;
-    }
-
-    h3 {
-      font-size: 22px;
-    }
-
-    h4 {
-      font-size: 20px;
-    }
-
+@media screen and (max-width: 736px) {
     #header-nav{
       height: 80px;
     }
     .fp-controlArrow{
       display: none;
     }
+
+    p{
+      font-size: 12px;
+    }
+
+    #footer{
+      position: fixed;
+      width: 100%;
+      top: 100px;
+    }
+
+    h3{
+      font-size: 18px;
+    }
+
+    h4{
+      font-size: 14px;
+    }
 }
 
-@media (max-width: 768px){
+@media (min-width: 768px){
   #main-nav ul{
     padding: 0px;
   }
   #main-nav li {
     font-size: 15px;
-    height: 100%;
     vertical-align: top;
   }
 
@@ -158,6 +160,12 @@ li.active a {
   }
   input#input-name {
     width: 150px;
+  }
+
+  #footer{
+    position: fixed;
+    width: 100%;
+    bottom: 100px;
   }
 }
 

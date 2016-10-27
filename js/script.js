@@ -79,7 +79,7 @@ $(document).ready(function() {
         //sectionsColor : ['#ccc', '#fff'],
         paddingTop: '3em',
         paddingBottom: '0px',
-        fixedElements: '#header-nav',
+        fixedElements: '#header-nav, #footer',
         responsiveWidth: 0,
         responsiveHeight: 0,
         responsiveSlides: false,
@@ -89,8 +89,12 @@ $(document).ready(function() {
         slideSelector: '.slide',
 
         //events
-        onLeave: function(index, nextIndex, direction){},
-        afterLoad: function(anchorLink, index){},
+        onLeave: function(index, nextIndex, direction){
+            $("footer").css("opacity", "0");        
+        },
+        afterLoad: function(anchorLink, index){
+            $("footer").css("opacity", "1");  
+        },
         afterRender: function(){},
         afterResize: function(){},
         afterResponsive: function(isResponsive){},
@@ -98,7 +102,3 @@ $(document).ready(function() {
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
 });
-
-// window.addEventListener("hashchange", function() { 
-//     scrollBy(0, -175) })
-
