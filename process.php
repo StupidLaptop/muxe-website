@@ -11,7 +11,7 @@ if( isset($_POST) ){
     $time = date('H:i:s');
      
     //form data
-    $name = $_POST['name'];    
+    //$name = $_POST['name'];    
     $email = $_POST['email'];
     // $telephone = $_POST['telephone'];
     // $enquiry = $_POST['enquiry'];
@@ -53,7 +53,6 @@ if( isset($_POST) ){
          
         $emailbody = "<p>Querido Papirriqui,</p>
                       <p>Has recibido un nuevo contacto desde http://www.muxe.com.co/.</p>
-                      <p><strong>Nombre: </strong> {$name} </p>
                       <p><strong>Email: </strong> {$email} </p>
                       <p>Este mensaje ha sido enviado desde la dirección IP: {$ipaddress} on {$date} at {$time}</p>";
          
