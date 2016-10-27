@@ -124,9 +124,23 @@ li.active a {
       font-size: 14px;
     }
 
-    table{
-      font-size: 8px;
-    }
+  th{
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  td{
+    color: #fff;
+    font-size: 10px;
+  }
+
+  input#input-email {
+    width: 100%;
+  }
+  input#input-name {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px){
@@ -175,6 +189,36 @@ li.active a {
     width: 750px;
     height: 90px;
   }
+
+  #main-nav li{
+    font-size: 18px;
+    vertical-align: top;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  input#input-name{
+  vertical-align: bottom;
+  }
+
+  input#input-email{
+    vertical-align: bottom;
+  }
+
+  input#input-button{
+    margin-left: 5px;
+  }
+
+  th{
+    color: #666;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  td{
+    color: #fff;
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -208,6 +252,7 @@ input#input-button{
 
 #main-nav{
 	background: #111;
+  height: 24px;
 	/*color: #C02BDE;*/
 }
 
@@ -215,10 +260,6 @@ input#input-button{
 	margin-bottom: 0px;
 }
 
-#main-nav li{
-	padding-left: 20px;
-	padding-right: 20px;
-}
 
 #social-nav{
 	position: fixed;
@@ -295,15 +336,7 @@ svg:hover path{
 }*/
 
 /**TABLE**/
-th{
-  color: #666;
-  font-size: 18px;
-  text-align: center;
-}
-td{
-  color: #fff;
-  font-size: 16px;
-}
+
 /**FORM**/
 label{
   font-size: 20px;
@@ -315,14 +348,4 @@ p.p-descarga{
   font-size: 16px;
 } 
 
-input#input-name{
-  vertical-align: bottom;
-}
 
-input#input-email{
-  vertical-align: bottom;
-}
-
-input#input-button{
-  margin-left: 5px;
-}
