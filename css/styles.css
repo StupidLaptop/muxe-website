@@ -47,7 +47,7 @@ body {
 /** GENERAL **/
 
 p, td{	
-	font-size: 12px;
+	font-size: 13px;
   font-family: 'Montserrat', sans-serif; 
 }
 
@@ -96,11 +96,11 @@ input{
 
 /** SVG SOCIAL NAVBAR & FOOTER BUTTONS **/
 .svg path {
-  fill: #FFF;
+  fill: #FFD700;
 }
 
 svg:hover path{
-  fill: #FFD700;
+  fill: #FFF;
 }
 
 /** SECTION SPECIFIC SETTINGS **/
@@ -148,11 +148,7 @@ svg:hover path{
 /**CONTAINER**/
 
 .container {
-  height: 100%;
-  width:800px;
-  background: rgba(20, 20, 20, .5);
-  padding-left:50px;
-  padding-right:50px; 
+
 }
 
 #main-image {
@@ -167,16 +163,35 @@ svg:hover path{
 /**** RESPONSIVE SETTINGS ****/
 
 /***iPhone4 and smaller ***/
-@media screen and (max-width: 480px) {
-  #footer{
+@media screen and (max-height: 480px){
+
+  #social-nav-footer{
     display: none;
+  }
+
+}
+@media screen and (max-width: 320px) {
+
+  .container {
+    width: 200px;
+  }
+
+  .ep-cover{
+    content: url('../images/manantial_170.jpg')
   }
 }
 
 /***Bigger than iPhone4 smaller than iPad portrait ***/
 @media screen and (max-width: 736px) {
+
+  .container {
+    height: 100%;
+    width:270px;
+    padding-left:10px;
+    padding-right:10px; 
+  }
   #header-nav{
-    height: 80px;
+    height: 65px;
   }
   .fp-controlArrow{
     display: none;
@@ -225,8 +240,16 @@ svg:hover path{
   }
 }
 
-/***Bigger than iPhone4 smaller than iPad portrait ***/
+/***Bigger than iPad portrait ***/
 @media (min-width: 737px){
+  
+  .container {
+    height: 100%;
+    width:800px;
+    padding-left:50px;
+    padding-right:50px; 
+  }
+
   h3{
     font-size: 13px;
     letter-spacing: 4px;
@@ -276,7 +299,9 @@ svg:hover path{
 
 /*** Laptops and larger displays ***/ 
 @media (min-width: 769px) {
- 
+  .container{
+      background: rgba(20, 20, 20, .5);
+  }
   h3{
     font-size: 13px;
     font-weight: normal;
