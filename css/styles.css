@@ -5,6 +5,7 @@
          url('geometos_rounded-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    -webkit-font-smoothing: antialiased;
 
 }
 
@@ -14,6 +15,7 @@
          url('geometos-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    -webkit-font-smoothing: antialiased;
 
 }
 
@@ -24,6 +26,7 @@
   font-weight: 400;
   src: local('Montserrat-Regular'), url(http://fonts.gstatic.com/s/montserrat/v7/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+  -webkit-font-smoothing: antialiased;
 }
 /* latin */
 @font-face {
@@ -32,6 +35,7 @@
   font-weight: 700;
   src: local('Montserrat-Bold'), url(http://fonts.gstatic.com/s/montserrat/v7/IQHow_FEYlDC4Gzy_m8fcoWiMMZ7xLd792ULpGE4W_Y.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -108,7 +112,7 @@ svg:hover path{
 /** HEADER **/
 
 #header-nav {
-  margin: auto; 
+  margin: 0 auto; 
   position:fixed;
   background: #000;
   padding-top: 15px;
@@ -116,6 +120,7 @@ svg:hover path{
 
 #main-nav{
   background: #111;
+  margin'right: auto;
 }
 
 
@@ -245,7 +250,7 @@ svg:hover path{
   
   .container {
     height: 100%;
-    width:800px;
+    width: 800px;
     padding-left:50px;
     padding-right:50px; 
   }
@@ -268,7 +273,6 @@ svg:hover path{
 
   #main-nav{
     height: 18px;
-
   }  
 
   label{
@@ -301,6 +305,7 @@ svg:hover path{
 @media (min-width: 769px) {
   .container{
       background: rgba(20, 20, 20, .5);
+      width: 800px;
   }
   h3{
     font-size: 13px;
@@ -316,10 +321,15 @@ svg:hover path{
   .svg {
    width:24px;
   }
-
+  
+  #header-nav {
+    width: 800px;
+    height: 82px;
+  }
 
   #main-nav{
     height: 18px;
+    width: 800px;
 
   }  
 
@@ -330,10 +340,9 @@ svg:hover path{
     padding-left: 10px;
     padding-right: 15px;
   }
-
-  #header-nav {
-    width: 800px;
-    height: 82px;
+  
+  #ep-cover-md{
+    margin-top: 30px;
   }
 
   input#input-email{
