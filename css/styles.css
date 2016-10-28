@@ -193,6 +193,12 @@ svg:hover path{
     letter-spacing: 4px;
   }
 
+  h4{
+    font-size: 9px;
+    font-weight: normal;
+    letter-spacing: 5px;
+  }
+
 
   th{
     color: #666;
